@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            h1, h2  {
+                color: #32C6A6;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Form for requesting a quote-->
+        <h2>Get A Instant Quote</h1>
+        <form method="GET" action="form-submit.html">
+            <fieldset>
+                <label>Your Name</label>
+                <input style="background-color: #e2d5d5;" type="text" name="fullname" required>
+            </fieldset>
+            <fieldset>
+                <label>Your Email</label>
+                <input style="background-color: #e2d5d5;" type="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <label>Phone</label>
+                <input style="background-color: #e2d5d5;" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-45-6789" name="phonenumber" required>
+            </fieldset>
+            <fieldset>
+                <label>Message</label>
+                <input style="background-color: #e2d5d5;" type="text" name="message" required>
+            </fieldset>
+            <br>
+            <button type="submit">Send message</button>
+        </form>
+        <br>
+        <footer>
+            <a href="index.html">Back to homepage</a>
+        </footer>   
+    </body>
+</html>

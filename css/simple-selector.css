@@ -251,7 +251,7 @@ border-radius: 50%;
 
 /*Section 9 Testimonials*/
 
-.testimonials {
+.testimonials { /*testimonial section styling*/
     border: 1px solid lightgray;
     background-color: lightgray;
     background-position: center;
@@ -259,7 +259,7 @@ border-radius: 50%;
     text-align: center;
 }
 
-.testimonials img { 
+.testimonials img { /*makes image round*/
     border-radius: 50%;
 }
 
@@ -276,7 +276,7 @@ border-radius: 50%;
     justify-content: space-between;
 }
 
-.imageOver {
+.imageOver { /*background color when hover over image*/
     position: relative;
     background: lightseagreen;
     display: inline-block;
@@ -291,18 +291,18 @@ border-radius: 50%;
     visibility: hidden;
 }
 
-.imageOver:hover .image {
+.imageOver:hover .image { /*image changes when hover*/
     cursor: pointer;
     opacity: 0.3;
   }
 
-.imageOver:hover p {
+.imageOver:hover p { /*text when hover over image*/
     width: 150px;
     visibility: visible;
     opacity: 0.7; 
 }
 
-.image {
+.image { /*image styling*/
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;

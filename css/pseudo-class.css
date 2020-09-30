@@ -1,34 +1,9 @@
-.navBar ul {
-    list-style-type: none;
-}
 
-.navBar a {
-    float: right;
-    text-decoration: none;
-    color: grey;
-    padding: 10px;
-}
-
-.navBar form {
-    float: right;
-}
-
-.navBar li {
-    display: inline;
-}
-
-a:hover {
+a:hover { /*Hover over navigation links*/
     cursor: pointer;
     color: lightseagreen;
 }
 
-.button1 {
-    border-radius: 40%;
-    padding: 12px;
-    background-color: lightseagreen;
-    border: lightseagreen;
-    color: white;
-}
 
 .desc {
     position: relative;
@@ -36,9 +11,6 @@ a:hover {
     color: white;
 }
 
-.desc img {
-    margin: 0px;
-}
 
 .form {
     display: inline-block;

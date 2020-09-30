@@ -3,21 +3,69 @@ body {
     margin-top: 10px;
 }
 
+/* Top of page including welcome bar and navigation bar */
+
 h1 {
     color: lightseagreen;
 }
+
+.titleLabel { /* Welcome bar*/
+    border: 1px solid lightgrey;
+    color: grey;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleLabel span { /* Email in top right corner */
+    color: lightseagreen;
+}
+
+.navBar ul { /* Make list horizontal*/
+    list-style-type: none;
+}
+
+.navBar a { /* Nav bar links */
+    font-weight: bold;
+    float: right;
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+
+.button1 { /* Nav bar button*/
+    float: right;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: lightseagreen;
+    border: lightseagreen;
+    color: white;
+}
+
+a:hover { /*Hover over navigation links*/
+    cursor: pointer;
+    color: lightseagreen;
+}
+
+/*First section with catch phrase*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h2 {
     position: absolute;
     top: 8px;
     left: 16px;
 }
-
-.titleLabel {
-    border: 1px solid lightgrey;
-    color: grey;
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-}
-

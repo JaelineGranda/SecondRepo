@@ -235,46 +235,58 @@
         </section>
         <br>
         <!--Testimonials Section-->
-        <section>
-            <p><b>Testimonials</b></p>
-            <img src="./../images/testimonial.jpg" width="100" height="80">
+        <section class="testimonials">
+            <p class="sectionhead">Testimonials</p>
+            <img src="./../images/testimonial.jpg" width="120" height="120">
+            <br>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur culpa quibusdam est vel eum, blanditiis labore, dolores ipsam itaque fuga officia! Quasi, est id! Labore aliquid ab dolor eos voluptates?</p>
-            <p><i>John Doe, CEO Founder, Company</i></p>
+            <br>
+            <p class="test1"><i>John Doe, CEO Founder, Company</i></p>
         </section>
         <br>
         <!--Projects section pictures-->
-        <section>
-            <p><b>Our Projects</b></p>
-            <img src="./../images/projects.jpg" width="80" height="80">
-            <img src="./../images/sweeping.jpeg" width="80" height="80">
-            <img src="./../images/projects.jpg" width="80" height="80">
-            <img src="./../images/sweeping.jpeg" width="80" height="80">
+        <p class="sectionhead">Our Projects</p>
+        <section class="tableFlex">
+            <div>
+                <img src="./../images/projects.jpg" width="80" height="80">
+            </div>
+            <div>
+                <img src="./../images/sweeping.jpeg" width="80" height="80">
+            </div>
+            <div>
+                <img src="./../images/projects.jpg" width="80" height="80">
+            </div>
+            <div>
+                <img src="./../images/sweeping.jpeg" width="80" height="80">
+            </div>
         </section>
 
         <br>
         <br>
         <!--Form for instant quote-->
+        <div class="formsection">
+        <img src="./../images/form-background.jpg">
         <form class="form" method="GET" action="form-submit.html">
-            <p>Get A Instant Quote</p>
+            <p class="sectionhead">Get A Instant Quote</p>
             <fieldset>
-                <label>Your Name *</label>
-                <input type="text" name="fullname" required>
+                <input type="text" name="fullname" value="Your Name *" required>
             </fieldset>
             <fieldset>
-                <label>Your Email *</label> <!--Email required to contact client-->
-                <input type="email" name="email" required>
+        <!--Email required to contact client-->
+                <input type="email" name="email" value="Your Email *" required>
             </fieldset>
             <fieldset>
-                <label>Phone</label> <!--Phone number required with specific pattern-->
-                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-45-6789" name="phonenumber" required>
+                <!--Phone number required with specific pattern-->
+                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-45-6789" name="phonenumber" value="Phone" required>
             </fieldset>
             <fieldset>
-                <label>Message</label> <!--Validation for minimum length of message-->
-                <input type="text" minlength="5" name="message" required>
+                <!--Validation for minimum length of message-->
+                <input class="message" type="text" minlength="5" name="message" value="Message" required>
             </fieldset>
             <br>
-            <button type="submit">Send message</button>
+            <button class="formbutton" type="submit">Send message</button>
         </form>
+        </div>
         <br>
 
         <!--Copyright-->

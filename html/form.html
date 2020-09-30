@@ -2,36 +2,34 @@
 <html>
     <head>
         <title>Form</title>
-        <style>
-            h1, h2  {
-                color: #32C6A6;
-            }
+        <link href="../css/main.css" rel="stylesheet">
         </style>
     </head>
     <body>
-        <!--Form for requesting a quote-->
-        <h2>Get A Instant Quote</h1>
-        <form method="GET" action="form-submit.html">
-            <fieldset>
-                <label>Your Name *</label>
-                <input type="text" name="fullname" required>
-            </fieldset>
-            <fieldset>
-                <label>Your Email *</label>
-                <input type="email" name="email" required>
-            </fieldset>
-            <fieldset>
-                <label>Phone</label>
-                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-45-6789" name="phonenumber" required>
-            </fieldset>
-            <fieldset>
-                <label>Message</label>
-                <input type="text" name="message" required>
-            </fieldset>
+        <div class="formsection">
+            <img src="./../images/form-background.jpg">
+            <form class="form" method="GET" action="form-submit.html">
+                <p class="sectionhead">Get A Instant Quote</p>
+                <fieldset>
+                    <input type="text" name="fullname" placeholder="Your name *" required>
+                </fieldset>
+                <fieldset>
+            <!--Email required to contact client-->
+                    <input type="email" name="email" placeholder="Your Email *" required>
+                </fieldset>
+                <fieldset>
+                    <!--Phone number required with specific pattern-->
+                    <input type="tel" pattern="^\d{3}\d{3}\d{4}$" placeholder="Phone" name="phonenumber" required>
+                </fieldset>
+                <fieldset>
+                    <!--Validation for minimum length of message-->
+                    <input class="message" type="text" minlength="5" name="message" placeholder="Message" required>
+                </fieldset>
+                <br>
+                <button class="formbutton" type="submit">Send message</button>
+            </form>
+            </div>
             <br>
-            <button type="submit">Send message</button>
-        </form>
-        <br>
         <footer>
             <a href="index.html">Back to homepage</a>
         </footer>   

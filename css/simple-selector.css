@@ -1,6 +1,7 @@
 body {
     margin: 100px;
     margin-top: 10px;
+    color: grey;
 }
 
 /* Top of page including welcome bar and navigation bar */
@@ -11,7 +12,6 @@ h1 {
 
 .titleLabel { /* Welcome bar*/
     border: 1px solid lightgrey;
-    color: grey;
     padding: 6px;
     display: flex;
     justify-content: space-between;
@@ -47,9 +47,9 @@ a:hover { /*Hover over navigation links*/
     color: lightseagreen;
 }
 
-/*First section with catch phrase*/
+/*Section 1 with catch phrase*/
 
-.desc {  /*description text section*/
+.section1 {  /*description text section*/
     position: relative;
     text-align: left;
     color: white;
@@ -78,11 +78,24 @@ a:hover { /*Hover over navigation links*/
     color: lightseagreen;
 }
 
-.desc img { /*Image brightness more dim*/
+.section1 img { /*Image brightness more dim*/
     filter: brightness(50%);
 }
 
+/*Section 2 with why us*/
 
+.sectionhead {
+    text-align: center;
+    color: lightseagreen;
+    font-size: 25px;
+}
+
+.s2Title {
+    color: lightseagreen;
+    font-size: 20px;
+}
+
+/*Section 3 with services*/
 
 
 

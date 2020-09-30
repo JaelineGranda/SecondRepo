@@ -12,7 +12,7 @@ h1 {
 
 .titleLabel { /* Welcome bar*/
     border: 1px solid lightgrey;
-    padding: 6px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -90,19 +90,42 @@ a:hover { /*Hover over navigation links*/
     font-size: 25px;
 }
 
-.s2Title {
+.sTitle {
     color: lightseagreen;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 /*Section 3 with services*/
 
+.buttonc { /* Center button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.buttonleft { /* Nav bar button*/
+    border-radius: 30px;
+    padding: 12px;
+    background-color: lightseagreen;
+    border: lightseagreen;
+    color: white;
+}
 
+/*Section 4 with about company*/
 
+.aboutHeader {
+    color: lightseagreen;
+    font-size: 25px;
+}
 
+/*Section 5 with discount bar*/
 
-
+.discount {
+    border: 1px solid lightgrey;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 

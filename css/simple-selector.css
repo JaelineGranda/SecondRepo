@@ -97,6 +97,12 @@ a:hover { /*Hover over navigation links*/
 
 /*Section 3 with services*/
 
+.services {
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    padding: 30px;
+}
+
 .buttonc { /* Center button */
     display: flex;
     justify-content: center;
@@ -113,6 +119,14 @@ a:hover { /*Hover over navigation links*/
 
 /*Section 4 with about company*/
 
+.about {
+    display: block;
+}
+
+.about img {
+    float: left;
+}
+
 .aboutHeader {
     color: lightseagreen;
     font-size: 25px;
@@ -122,12 +136,21 @@ a:hover { /*Hover over navigation links*/
 
 .discount {
     border: 1px solid lightgrey;
-    padding: 30px;
+    background-color: lightseagreen;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
 }
 
+.discount p {
+    color: white;
+    font-size: 25px; 
+}
 
-
-
-
+.button3 {
+    border-radius: 30px;
+    padding: 12px;
+    background-color: white;
+    border: white;
+    color: lightseagreen;
+}

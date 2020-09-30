@@ -49,23 +49,49 @@ a:hover { /*Hover over navigation links*/
 
 /*First section with catch phrase*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h2 {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+.desc {  /*description text section*/
+    position: relative;
+    text-align: left;
+    color: white;
 }
+.phrase { /*Phrase text placed on picture*/
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    font-size: 40px;
+}
+
+.description { /*Description text placed on picture*/
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.button2 { /*Description button placed on picture*/
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: white;
+    border: white;
+    color: lightseagreen;
+}
+
+.desc img { /*Image brightness more dim*/
+    filter: brightness(50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

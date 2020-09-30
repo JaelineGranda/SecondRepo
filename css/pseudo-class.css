@@ -1,18 +1,18 @@
 
-a:hover { /*Hover over navigation links*/
-    cursor: pointer;
-    color: lightseagreen;
+/*h2 {
+    position: absolute;
+    top: 8px;
+    left: 16px;
 }
-
 
 .desc {
     position: relative;
     text-align: center;
     color: white;
-}
+}*/
 
 
-.form {
+/*.form {
     display: inline-block;
     text-align: center;
 }
@@ -20,4 +20,4 @@ a:hover { /*Hover over navigation links*/
 .form p {
     font-weight: bolder;
     color: lightseagreen
-}
+}*/

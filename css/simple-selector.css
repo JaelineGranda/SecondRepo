@@ -154,3 +154,43 @@ a:hover { /*Hover over navigation links*/
     border: white;
     color: lightseagreen;
 }
+
+/*Section 6 meet our team*/
+
+
+/*Section 7 pricing tables*/
+
+.pricing { /*pricing table border*/
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    padding: 30px;
+    text-align: center;
+}
+
+.pricing ul { /*Gets rid of bullets*/
+    list-style-type: none;
+}
+
+.pricebutton { /*buttons on pricing table*/
+    padding: 10px;
+    width: 210px;
+    background-color: lightseagreen;
+    border: lightseagreen;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

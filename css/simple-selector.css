@@ -76,6 +76,7 @@ a:hover { /*Hover over navigation links*/
     background-color: white;
     border: white;
     color: lightseagreen;
+    width: 160px;
 }
 
 .section1 img { /*Image brightness more dim*/
@@ -95,7 +96,17 @@ a:hover { /*Hover over navigation links*/
     font-size: 19px;
 }
 
+.tableFlex { /*make blocks horizontal*/
+    display: flex;
+    text-align: center;
+}
+
 /*Section 3 with services*/
+
+.servicesFlex { /*make blocks horizontal*/
+    display: flex;
+    text-align: left;
+}
 
 .services {
     border: 1px solid lightgray;
@@ -115,16 +126,17 @@ a:hover { /*Hover over navigation links*/
     background-color: lightseagreen;
     border: lightseagreen;
     color: white;
+    width: 140px;
 }
 
 /*Section 4 with about company*/
 
 .about {
-    display: block;
+    display: flex;
 }
 
-.about img {
-    float: left;
+.about div {
+    margin: 5px;
 }
 
 .aboutHeader {
@@ -139,17 +151,20 @@ a:hover { /*Hover over navigation links*/
     background-color: lightseagreen;
     padding: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.discount p {
+.discount div {
     color: white;
-    font-size: 25px; 
+    font-size: 25px;
+    margin: 15px; 
 }
 
 .button3 {
     border-radius: 30px;
     padding: 12px;
+    width: 140px;
     background-color: white;
     border: white;
     color: lightseagreen;
@@ -157,6 +172,14 @@ a:hover { /*Hover over navigation links*/
 
 /*Section 6 meet our team*/
 
+.teamFlex { /*make blocks horizontal*/
+    display: flex;
+    text-align: center;
+}
+
+.teamFlex img {
+border-radius: 50%;
+}
 
 /*Section 7 pricing tables*/
 
@@ -164,7 +187,6 @@ a:hover { /*Hover over navigation links*/
     border: 1px solid lightgray;
     background-color: lightgray;
     padding: 30px;
-    text-align: center;
 }
 
 .pricing ul { /*Gets rid of bullets*/
@@ -177,6 +199,17 @@ a:hover { /*Hover over navigation links*/
     background-color: lightseagreen;
     border: lightseagreen;
     color: white;
+}
+
+/*Section 8 blog*/
+
+.blogFlex {
+    display: flex;
+    text-align: left;
+}
+
+.blogFlex div{
+    margin: 5px;
 }
 
 

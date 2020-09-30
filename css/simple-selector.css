@@ -213,11 +213,15 @@ border-radius: 50%;
     margin: 10px;
 }
 
+.priceFlex section:hover {
+    cursor: pointer;
+    outline: lightseagreen solid 4px;
+}
+
 .price { /*price 120 styling*/
     font-size: 30px;
     font-weight: bolder;
 }
-
 
 .pricing { /*pricing table border*/
     border: 1px solid lightgray;
@@ -260,18 +264,16 @@ border-radius: 50%;
 }
 
 .test1 {
-    border: 1px solid lightseagreen;
     background-color: lightseagreen;
     color: white;
-    padding: 10px;
-    width: 300px;
+    padding: 8px;
 }
 
 /*Section 9 Projects*/
 
 .projectFlex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /*Section 10 Form*/
@@ -306,28 +308,34 @@ border-radius: 50%;
 }
 
 input { /*styles input boxes*/
-    padding: 10px 10px;
+    padding: 15px;
     width: 100%;
     margin: 8px 0;
     box-sizing: border-box;
     background-color: lightgray;
+    border: none;
+    color: gray;
   }
 
+fieldset {
+    border: none;
+}
+  
 /*Footer*/
 
-.copyright {
+.copyright { /*Company Title*/
     color: lightseagreen;
     font-size: 25px;
 }
 
-.footerFlex {
+.footerFlex { /*make footer boxes side by side*/
     display: flex;
     text-align: left;
     margin: 0 auto;
     justify-content: center;
 }
 
-.footerFlex div {
+.footerFlex div { /*Space between columns*/
     margin: 25px;
 }
 

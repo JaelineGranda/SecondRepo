@@ -65,8 +65,8 @@
         <br>
         <br>
         <!--Cleaning services offered-->
-        <p class="sectionhead">Cleaning Services</p>
         <section class="services">
+            <p class="sectionhead">Cleaning Services</p>
             <div class="servicesFlex">
             <div>
             <p class="sTitle">Residential Cleaning</p>
@@ -181,6 +181,7 @@
             <div class="priceFlex">
             <section> <!--Office cleaning pricing-->
                 <ul>
+                    <li><img src="./../images/circle.png" width="20" height="20"></li>
                     <lh class="sTitle">Office Cleaning</lh>
                     <li class="price">$120</li>
                     <li>Per Month</li>
@@ -194,6 +195,7 @@
             </section>
             <section> <!--Home cleaning pricing-->
                 <ul>
+                    <li><img src="./../images/circle.png" width="20" height="20"></li>
                     <lh class="sTitle">Home Cleaning</lh>
                     <li class="price">$120</li>
                     <li>Per Month</li>
@@ -207,6 +209,7 @@
             </section>
             <section> <!--Carpet cleaning pricing-->
                 <ul>
+                    <li><img src="./../images/circle.png" width="20" height="20"></li>
                     <lh class="sTitle">Carpet Cleaning</lh>
                     <li class="price">$120</li>
                     <li>Per Month</li>
@@ -220,6 +223,7 @@
             </section>
             <section> <!--Apartment cleaning pricing-->
                 <ul>
+                    <li><img src="./../images/circle.png" width="20" height="20"></li>
                     <lh class="sTitle">Apartment Cleaning</lh>
                     <li class="price">$120</li>
                     <li>Per Month</li>
@@ -266,23 +270,23 @@
             <p><i>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur culpa quibusdam est vel eum, blanditiis labore <br> dolores ipsam itaque fuga</i></p>
             <br>
             <br>
-            <p class="test1"><i>John Doe, CEO Founder, Company</i></p>
+            <span class="test1"><i>John Doe, CEO Founder, Company</i></span>
         </section>
         <br>
         <!--Projects section pictures-->
         <p class="sectionhead">Our Projects</p>
         <section class="projectFlex">
             <div>
-                <img src="./../images/projects.jpg" width="310" height="310">
+                <img class="image" src="./../images/projects.jpg" width="311" height="310">
             </div>
             <div>
-                <img src="./../images/sweeping.jpeg" width="310" height="310">
+                <img class="image" src="./../images/sweeping.jpeg" width="311" height="310">
             </div>
             <div>
-                <img src="./../images/projects.jpg" width="310" height="310">
+                <img class="image" src="./../images/projects.jpg" width="311" height="310">
             </div>
             <div>
-                <img src="./../images/sweeping.jpeg" width="310" height="310">
+                <img class="image" src="./../images/sweeping.jpeg" width="311" height="310">
             </div>
         </section>
         <!--Form for instant quote-->
@@ -291,19 +295,19 @@
         <form class="form" method="GET" action="form-submit.html">
             <p class="sectionhead">Get A Instant Quote</p>
             <fieldset>
-                <input type="text" name="fullname" value="Your Name *" required>
+                <input type="text" name="fullname" placeholder="Your name *" required>
             </fieldset>
             <fieldset>
         <!--Email required to contact client-->
-                <input type="email" name="email" value="Your Email *" required>
+                <input type="email" name="email" placeholder="Your Email *" required>
             </fieldset>
             <fieldset>
                 <!--Phone number required with specific pattern-->
-                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="123-45-6789" name="phonenumber" value="Phone" required>
+                <input type="tel" pattern="^\d{3}\d{3}\d{4}$" placeholder="Phone" name="phonenumber" required>
             </fieldset>
             <fieldset>
                 <!--Validation for minimum length of message-->
-                <input class="message" type="text" minlength="5" name="message" value="Message" required>
+                <input class="message" type="text" minlength="5" name="message" placeholder="Message" required>
             </fieldset>
             <br>
             <button class="formbutton" type="submit">Send message</button>

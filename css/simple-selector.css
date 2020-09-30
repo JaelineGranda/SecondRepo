@@ -137,7 +137,7 @@ a:hover { /*Hover over navigation links*/
 
 /*Section 4 with about company*/
 
-.about {
+.about { /*styles section layout*/
     display: flex;
     justify-content: center;
 }
@@ -152,7 +152,7 @@ a:hover { /*Hover over navigation links*/
     margin: 6px;
 }
 
-.aboutTitle {
+.aboutTitle { /*section title*/
     color: lightseagreen;
     font-size: 25px;
     line-height: 2px;

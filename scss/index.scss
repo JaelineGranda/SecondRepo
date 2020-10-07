@@ -63,7 +63,7 @@ a {
 /*Section 1 with catch phrase*/
 
 .section1 {  /*description text section*/
-    position: relative;
+    position: $relPos;
     text-align: left;
     color: $alternate-text-color;
     img { /*Image brightness more dim*/
@@ -72,21 +72,21 @@ a {
 }
 
 .phrase { /*Phrase text placed on picture*/
-    position: absolute;
+    position: $absPos;
     top: 75px;
     left: 100px;
     font-size: 40px;
 }
 
 .description { /*Description text placed on picture*/
-    position: absolute;
+    position: $absPos;
     top: 250px;
     left: 100px;
 }
 
 .button2 { /*Description button placed on picture*/
     @extend .pad-12;
-    position: absolute;
+    position: $absPos;
     top: 350px;
     left: 100px;
     border-radius: 30px;
@@ -277,11 +277,11 @@ a {
 }
 
 .imageOver { /*background color when hover over image*/
-    position: relative;
+    position: $relPos;
     background: $primary_color;
     @include display(inline-block);
     p {
-		position: absolute;
+		position: $absPos;
 		top: 30%;
 		left: 32%;
 		color: $alternate-text-color;
@@ -311,7 +311,7 @@ a {
 /*Section 10 Form*/
 
 .formsection {
-    position: relative;
+    position: $relPos;
     text-align: left;
     img { /*Background image on form*/
         filter: brightness(50%);
@@ -324,7 +324,7 @@ a {
     @extend .pad-28;
     border: 1px solid $alternate-text-color;
     background-color: $alternate-text-color;
-    position: absolute;
+    position: $absPos;
     top: 75px;
     right: 200px;
     width: 300px;
@@ -365,7 +365,7 @@ fieldset {
     margin: 0 auto;
     justify-content: center;
     div { /*Space between columns*/
-        margin: 25px;
+        @extend .mar-25;
     }
 }
 

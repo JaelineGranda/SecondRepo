@@ -1,0 +1,14 @@
+@for $pad from 0 through 10 {
+    $val: 4 * $pad;
+    .pad-#{$val} {
+        padding: #{$val}px;
+    }
+}
+
+@for $mar from 0 through 16 {
+    $val: 5 * $mar;
+    .mar-#{$val} {
+        margin: #{$val}px;
+    }
+}
+

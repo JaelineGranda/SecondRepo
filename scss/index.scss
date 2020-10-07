@@ -1,0 +1,374 @@
+body {
+    @extend .mar-80;
+    margin-top: 10px;
+    color: $secondary_color;
+}
+
+/* Top of page including welcome bar and navigation bar */
+
+h1 {
+    color: $primary_color;
+}
+
+.titleLabel { /* Welcome bar*/
+    @extend .pad-4;
+	border: 1px solid $bg-color;
+	display: flex;
+	justify-content: space-between;
+	span { /* Email in top right corner */
+		color: $primary_color;
+	}
+}
+
+ul {
+    @extend .pad-0;
+    list-style-type: $remove-bullets;
+}
+
+.navBar {
+	ul {
+		list-style-type: $remove-bullets;
+	}
+    a { /* Nav bar links */
+        @extend .pad-12;
+		font-weight: bold;
+		float: right;
+		text-decoration: $remove-bullets;
+		color: $secondary_color;
+	}
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+}
+
+.button1 { /* Nav bar button*/
+    float: right;
+    border-radius: 30px;
+    @extend .pad-12;
+    background-color: $primary_color;
+    border: $primary_color;
+    color: $alternate-text-color;
+}
+
+a {
+	&:hover { /*Hover over navigation links*/
+		cursor: pointer;
+		color: $primary_color;
+	}
+}
+/*Section 1 with catch phrase*/
+
+.section1 {  /*description text section*/
+    position: relative;
+    text-align: left;
+    color: $alternate-text-color;
+    img { /*Image brightness more dim*/
+        filter: brightness(50%);
+    }
+}
+
+.phrase { /*Phrase text placed on picture*/
+    position: absolute;
+    top: 75px;
+    left: 100px;
+    font-size: 40px;
+}
+
+.description { /*Description text placed on picture*/
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.button2 { /*Description button placed on picture*/
+    @extend .pad-12;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    border-radius: 30px;
+    background-color: $alternate-text-color;
+    border: $alternate-text-color;
+    color: $primary_color;
+    width: 160px;
+}
+
+/*Section 2 with why us*/
+
+.sectionhead {
+    text-align: center;
+    color: $primary_color;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sTitle {
+    color: $primary_color;
+    font-size: 19px;
+}
+
+.tableFlex { /*make blocks horizontal*/
+    display: flex;
+    text-align: center;
+}
+
+/*Section 3 with services*/
+
+.servicesFlex { /*make blocks horizontal*/
+    display: flex;
+    justify-content: center;
+}
+
+.services {
+    border: 1px solid $bg-color;
+    background-color: $bg-color;
+    @extend .pad-28;
+}
+
+.buttonc { /* Center button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonleft { /* Nav bar button*/
+    @extend .pad-12;
+    border-radius: 30px;
+    background-color: $primary_color;
+    border: $primary_color;
+    color: $alternate-text-color;
+    width: 140px;
+}
+
+/*Section 4 with about company*/
+
+.about { /*styles section layout*/
+    display: flex;
+    justify-content: center;
+    div {
+        margin: 6px;
+    }
+}
+
+.aboutBullet {
+    display: flex;
+    text-align: left;
+    line-height: 8px;
+}
+
+.aboutTitle { /*section title*/
+    color: $primary_color;
+    font-size: 25px;
+    line-height: 2px;
+}
+
+/*Section 5 with discount bar*/
+
+.discount {
+    @extend .pad-40;
+    border: 1px solid $bg-color;
+    background-color: $primary_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        color: $alternate-text-color;
+        font-size: 25px;
+        @extend .mar-15;
+    }
+}
+
+.button3 {
+    @extend .pad-12;
+    border-radius: 30px;
+    width: 140px;
+    background-color: $alternate-text-color;
+    border: $alternate-text-color;
+    color: $primary_color;
+}
+
+/*Section 6 meet our team*/
+
+.teamFlex { /*make blocks horizontal*/
+    display: flex;
+    @include flexBox(center);
+    div {
+        @extend .mar-40;
+    }
+    img {
+        border-radius: 50%;
+        }
+}
+
+/*Section 7 pricing tables*/
+
+.priceFlex { /*make blocks horizontal*/
+    display: flex;
+    @include flexBox(center);
+    section {
+		background-color: $alternate-text-color;
+		@extend .mar-10;
+		&:hover {
+			cursor: pointer;
+			outline: $primary_color solid 4px;
+		}
+	}
+}
+
+.price { /*price 120 styling*/
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.pricing { /*pricing table border*/
+    @extend .pad-28;
+    border: 1px solid $bg-color;
+    background-color: $bg-color;
+}
+
+.pricebutton { /*buttons on pricing table*/
+    @extend .pad-8;
+    width: 210px;
+    background-color: $primary_color;
+    border: $primary_color;
+    color: $alternate-text-color;
+}
+
+/*Section 8 blog*/
+
+.blogFlex {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    div{
+        @extend .mar-30;
+    }
+}
+
+/*Section 9 Testimonials*/
+
+.testimonials { /*testimonial section styling*/
+    @extend .pad-28;
+    border: 1px solid $bg-color;
+    background-color: $bg-color;
+    background-position: center;
+    text-align: center;
+    img { /*makes image round*/
+        border-radius: 50%;
+    }
+}
+
+.test1 {
+    @extend .pad-8;
+    background-color: $primary_color;
+    color: $alternate-text-color;
+}
+
+/*Section 9 Projects*/
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-columns: minmax(200px, 250px);
+    grid-auto-rows: minmax(200px, 250px);
+}
+
+.imageOver { /*background color when hover over image*/
+    position: relative;
+    background: $primary_color;
+    display: inline-block;
+    p {
+		position: absolute;
+		top: 30%;
+		left: 32%;
+		color: $alternate-text-color;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&:hover {
+		.image { /*image changes when hover*/
+			cursor: pointer;
+			opacity: 0.3;
+		}
+		p { /*text when hover over image*/
+			width: 150px;
+			visibility: visible;
+			opacity: 0.7;
+		}
+	}
+}
+
+.image { /*image styling*/
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    height: 100%;
+}
+
+/*Section 10 Form*/
+
+.formsection {
+    position: relative;
+    text-align: left;
+    img { /*Background image on form*/
+        filter: brightness(50%);
+        width: 100%;
+        height: 700px;
+    }
+}
+
+.form { /*Form*/
+    @extend .pad-28;
+    border: 1px solid $alternate-text-color;
+    background-color: $alternate-text-color;
+    position: absolute;
+    top: 75px;
+    right: 200px;
+    width: 300px;
+}
+
+.formbutton { /*Customizes form button*/
+    @extend .pad-12;
+    width: 100%;
+    background-color: $primary_color;
+    border: $primary_color;
+    color: $alternate-text-color;
+}
+
+input { /*styles input boxes*/
+    @extend .pad-16;
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: $bg-color;
+    border: none;
+    color: $secondary_color;
+  }
+
+fieldset {
+    border: none;
+}
+  
+/*Footer*/
+
+.copyright { /*Company Title*/
+    color: $primary_color;
+    font-size: 25px;
+}
+
+.footerFlex { /*make footer boxes side by side*/
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    justify-content: center;
+    div { /*Space between columns*/
+        margin: 25px;
+    }
+}
+
+li {
+    @extend .mar-10;
+}

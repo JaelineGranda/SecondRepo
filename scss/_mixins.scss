@@ -1,0 +1,4 @@
+@mixin flexBox ($val) {
+    text-align: ($val);
+    justify-content: ($val);
+}

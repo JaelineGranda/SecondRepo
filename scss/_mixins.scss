@@ -2,3 +2,7 @@
     text-align: ($val);
     justify-content: ($val);
 }
+
+@mixin display ($val) {
+    display: ($val);
+}

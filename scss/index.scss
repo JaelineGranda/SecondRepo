@@ -13,7 +13,7 @@ h1 {
 .titleLabel { /* Welcome bar*/
     @extend .pad-4;
 	border: 1px solid $bg-color;
-	display: flex;
+	@include display(flex);
 	justify-content: space-between;
 	span { /* Email in top right corner */
 		color: $primary_color;
@@ -111,14 +111,14 @@ a {
 }
 
 .tableFlex { /*make blocks horizontal*/
-    display: flex;
+    @include display(flex);
     text-align: center;
 }
 
 /*Section 3 with services*/
 
 .servicesFlex { /*make blocks horizontal*/
-    display: flex;
+    @include display(flex);
     justify-content: center;
 }
 
@@ -129,7 +129,7 @@ a {
 }
 
 .buttonc { /* Center button */
-    display: flex;
+    @include display(flex);
     justify-content: center;
     align-items: center;
 }
@@ -146,7 +146,7 @@ a {
 /*Section 4 with about company*/
 
 .about { /*styles section layout*/
-    display: flex;
+    @include display(flex);
     justify-content: center;
     div {
         margin: 6px;
@@ -154,7 +154,7 @@ a {
 }
 
 .aboutBullet {
-    display: flex;
+    @include display(flex);
     text-align: left;
     line-height: 8px;
 }
@@ -171,7 +171,7 @@ a {
     @extend .pad-40;
     border: 1px solid $bg-color;
     background-color: $primary_color;
-    display: flex;
+    @include display(flex);
     justify-content: center;
     align-items: center;
     div {
@@ -193,7 +193,7 @@ a {
 /*Section 6 meet our team*/
 
 .teamFlex { /*make blocks horizontal*/
-    display: flex;
+    @include display(flex);
     @include flexBox(center);
     div {
         @extend .mar-40;
@@ -206,7 +206,7 @@ a {
 /*Section 7 pricing tables*/
 
 .priceFlex { /*make blocks horizontal*/
-    display: flex;
+    @include display(flex);
     @include flexBox(center);
     section {
 		background-color: $alternate-text-color;
@@ -240,7 +240,7 @@ a {
 /*Section 8 blog*/
 
 .blogFlex {
-    display: flex;
+    @include display(flex);
     justify-content: center;
     text-align: left;
     div{
@@ -270,7 +270,7 @@ a {
 /*Section 9 Projects*/
 
 .projectGrid {
-    display: grid;
+    @include display(grid);
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-columns: minmax(200px, 250px);
     grid-auto-rows: minmax(200px, 250px);
@@ -279,7 +279,7 @@ a {
 .imageOver { /*background color when hover over image*/
     position: relative;
     background: $primary_color;
-    display: inline-block;
+    @include display(inline-block);
     p {
 		position: absolute;
 		top: 30%;
@@ -360,7 +360,7 @@ fieldset {
 }
 
 .footerFlex { /*make footer boxes side by side*/
-    display: flex;
+    @include display(flex);
     text-align: left;
     margin: 0 auto;
     justify-content: center;

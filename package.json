@@ -1,0 +1,22 @@
+{
+  "name": "assignment-4-jaelinegranda",
+  "version": "1.0.0",
+  "description": "CSS & SCSS",
+  "main": "index.js",
+  "scripts": {
+    "scss":"./node_modules/.bin/node-sass scss/main.scss --output dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2020/assignment-4-JaelineGranda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2020/assignment-4-JaelineGranda/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2020/assignment-4-JaelineGranda#readme",
+  "dependencies": {
+    "node-sass": "4.14.1"
+  }
+}

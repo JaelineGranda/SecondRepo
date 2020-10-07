@@ -8,7 +8,7 @@ Technologies:
 HTML
 CSS
 
-Status: Project is ongoing as of 09/30/2020
+Status: Project is complete as of 10/07/2020
 
 Contact Info:
 Jaeline Granda
